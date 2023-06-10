@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity5"
+    android:background="@color/orange"
+    android:orientation="vertical"
+    android:id="@+id/PageFiveRelativeBackground"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/PageFiveLinearLayoyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/PageFiveHintImage"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:src="@drawable/photo_icon"
+            >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/PageFiveHintCount"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:text="Hint - 0"
+            android:fontFamily="@font/bit"
+            android:textColor="@color/violet"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/PageFiveClickedTimeText"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 : 00 "
+            android:fontFamily="@font/bit"
+            android:textColor="@color/violet"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/PageFiveTheamImage"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="2dp"
+            android:src="@drawable/abc_ic_menu_copy_mtrl_am_alpha"
+            >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/PageFiveRightPositionTic"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="2dp"
+            android:src="@drawable/tick"
+            >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/PageFiveLevelImage"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="2dp"
+            android:src="@drawable/img"
+            >
+        </ImageView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/PageFiveShafulImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PageFiveLinearLayoyt"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        >
+
+    </ImageView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/PageFiveRecyclrView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:scrollbars="none">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

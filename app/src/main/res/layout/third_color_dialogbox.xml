@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    >
+
+    <ImageView
+        android:id="@+id/ColorThemeCancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_delete"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/ColorThemeChooseColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Theme"
+        android:fontFamily="@font/bit"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textColor="@color/DarkForrestGreen"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
+
+    <GridView
+        android:id="@+id/ThirdPageColorThemeGridview"
+        android:layout_below="@+id/ColorThemeChooseColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:verticalSpacing="20dp"
+        android:horizontalSpacing="20dp"
+        android:scrollbars="none"
+        android:gravity="center"
+        android:numColumns="3"
+        >
+
+    </GridView>
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/light_green_border_dialog">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/ic_lock_idle_alarm"
+            >
+
+        </ImageView>
+        <CheckBox
+            android:id="@+id/TimeLimitCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+        </CheckBox>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TimeLess30Second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:text="Time Limit : 30 sec"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bit"
+
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/TimeLimitDialogboxText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:text="Expert"
+        android:textSize="25dp"
+        android:textColor="#DCF100"
+        android:fontFamily="@font/lemon"
+        android:textStyle="bold"
+
+        >
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/TimeLimitDialogboxPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/play_but"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        >
+
+    </ImageView>
+
+
+</LinearLayout>

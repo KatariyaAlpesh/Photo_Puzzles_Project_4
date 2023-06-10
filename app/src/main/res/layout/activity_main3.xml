@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity3"
+    android:background="@color/orange"
+    android:orientation="vertical"
+    android:id="@+id/ThirdPageRelativeBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/ThirdPageHintImage"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:src="@drawable/photo_icon"
+            >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/ThirdPageHintCount"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:text="Hint - 0"
+            android:fontFamily="@font/bit"
+            android:textColor="@color/violet"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/ThirdPageClickedTimeText"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 : 00 "
+            android:fontFamily="@font/bit"
+            android:textColor="@color/violet"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/ThirdPageTheamImage"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="2dp"
+            android:src="@drawable/abc_ic_menu_copy_mtrl_am_alpha"
+            >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ThirdPageRightPositionTic"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="2dp"
+            android:src="@drawable/tick"
+            >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ThirdPageLevelImage"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="2dp"
+            android:src="@drawable/img"
+            >
+        </ImageView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ThirdPageRecyclrView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        android:scrollbars="none"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
